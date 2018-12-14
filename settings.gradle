@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':challenge.data', ':challenge.widget'
