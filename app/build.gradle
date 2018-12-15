@@ -15,6 +15,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "int", "LIMIT", "100"
+        buildConfigField "String", "BASEURL", "\"http://google.com/\""
+        buildConfigField "int", "CACHETIME", "432000" // 5 days
     }
     buildTypes {
         release {
