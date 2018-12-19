@@ -10,4 +10,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="EditTextTheme" parent="@android:style/Theme.Holo">
+        <item name="android:editTextStyle">@style/AppEditTextStyle</item>
+    </style>
+
+    <style name="AppEditTextStyle">
+        <item name="android:background">@drawable/bg_edittext_stroke_corners</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
 </resources>

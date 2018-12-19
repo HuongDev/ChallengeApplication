@@ -22,13 +22,14 @@
 
     <Button
         android:id="@+id/btnEnter"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/enter"
         android:textColor="@color/white"
         android:background="@drawable/bg_button_corners"
         android:layout_marginBottom="@dimen/dp20"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

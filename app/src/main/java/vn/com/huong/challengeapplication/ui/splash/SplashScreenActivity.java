@@ -15,6 +15,7 @@ public class SplashScreenActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getAppComponent().inject(this);
         setContentView(R.layout.activity_splash_screen);
 
         btnEnter = (Button) findViewById(R.id.btnEnter);

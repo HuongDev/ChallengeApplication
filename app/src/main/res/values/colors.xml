@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF2851</color>
+    <color name="colorPrimary">#fe365f</color>
     <color name="colorPrimaryDark">#FEFEFE</color>
-    <color name="colorAccent">#FF2851</color>
+    <color name="colorAccent">#fe365f</color>
     <color name="white">#FFFFFF</color>
+    <color name="text_opacity_pink">#FE718E</color>
+    <color name="text_opacity_gray">#E7E7E7</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="colorIcon">#828282</color>
 </resources>
