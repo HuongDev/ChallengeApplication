@@ -1,4 +1,4 @@
-package vn.com.huong.challengeapplication.ui.main;
+package vn.com.huong.challengeapplication.ui.main.home;
 
 
 import android.os.Bundle;
@@ -9,22 +9,21 @@ import android.view.ViewGroup;
 
 import vn.com.huong.challengeapplication.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class HomeFragment extends Fragment {
-
+    public static final String TAG = HomeFragment.class.getSimpleName();
 
     public HomeFragment() {
-        // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+
+
+        return view;
     }
 
 }

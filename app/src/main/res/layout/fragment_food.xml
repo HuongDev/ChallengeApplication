@@ -1,14 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.FoodFragment">
+    tools:context=".ui.main.food.FoodFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="@dimen/dp20">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/food_collections"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/filter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_filter" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            style="@style/PinkText"
+            android:id="@+id/tvPopularFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular_food"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+        <View
+            android:id="@+id/underFood"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/underline_tab"
+            app:layout_constraintEnd_toEndOf="@id/tvPopularFood"
+            app:layout_constraintStart_toStartOf="@id/tvPopularFood"
+            app:layout_constraintTop_toBottomOf="@+id/tvPopularFood" />
+
+
+        <TextView
+            style="@style/PinkText"
+            android:id="@+id/tvChefs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chefs"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+        <View
+            android:id="@+id/underChefs"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/underline_tab"
+            app:layout_constraintEnd_toEndOf="@id/tvChefs"
+            app:layout_constraintStart_toStartOf="@id/tvChefs"
+            app:layout_constraintTop_toBottomOf="@+id/tvChefs" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcvFood"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/underFood"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@android:layout/simple_list_item_checked" />
+
+    </android.support.constraint.ConstraintLayout>
 </FrameLayout>
